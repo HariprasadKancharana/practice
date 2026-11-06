@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title>Catering</title>
+    </head>
+    <style>
+        /*background color*/
+        body{
+            background-color:linen;
+        }
+        /*NAVIGATION*/
+        .navbar{
+           position: fixed;
+           width: 97.5%;           
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
+        nav ul{
+            display:flex;
+            flex-direction: row;
+            gap: 60px;
+            padding: 10px;
+            list-style-type: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        nav h2 a{
+            text-decoration: none;
+            color: black;
+        }
+        /*BACKGROUD IMAGE FOR HOME*/
+        .container{
+            background-image:url("img_catering.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .container h1{
+            padding-top: 650px;
+            color: white;
+        }
+        /*ABOUT SECTION*/
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 30px 10%;
+            
+        }
+        main .img{
+            width: 50%;
+        }
+        main .info{
+            width: 50%;
+        }
+         main .img img{
+            width: 95%;
+            border-radius: 10px;
+            height: 500px;
+        } 
+        main .info h1{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        main .info h3{
+            text-align: center;
+            font-size: 22px;
+        }
+        main .info p{
+            font-size: 20px;
+        }
+        /*MENU SECTION*/
+        article{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 30px 10%;
+            
+        }
+        article .img{
+            width: 50%;
+        }
+        article .info{
+            width: 50%;
+        }
+        article .img img{
+            width: 98%;
+            border-radius: 10px;
+            height: 500px;
+        }
+        article .info h1{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        article .info h3{
+            color:darkgray;
+        }
+        /*CONTACT FROM*/
+        aside input{
+            width: 100%;
+            padding: 10px;
+            margin:10px;
+            border-radius: 5px;
+             background-color:linen;
+        }
+        aside button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        aside h1{
+            margin: 12px;
+        }
+        aside h2{
+            margin: 12px;
+        }
+        aside h3{
+            margin: 12px;
+        }
+        aside{
+           
+            width:80%;
+            margin: 30px 10%;
+        }
+        /*images*/
+        img{
+            width: 100%;
+            border-radius: 10px;
+            height:700px;
+        }
+        /*sclooer*/
+        main, article, aside {
+          scroll-margin-top: 80px;
+        }
+        /*FOOTER*/
+        footer{
+            text-align: center;
+            padding: 10px;
+            text-decoration: underline;
+        }
+    </style>
+    <body>
+        <nav class="navbar">
+            <h2><a href="#about">Gourment au catering</a></h2>
+            
+            <ul>
+                
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+        <h1>Le Catering</h1></div>
+        <main id="about">
+            <div class="img">
+                <img src="img_tablesetting2.jpg" alt="about" >
+            </div>
+            <div class="info">
+                <h1>About Catering</h1>
+                <h3>Tradition since 1889</h3>
+                <p>The Catering was founded in blabla by Mr.Smith in lorem ipsum dolor sit amet,consectetur adispiscing elit consectetut adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aligua.</p>
+                <p Style="color:grey">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserubt mollit anim id est laorum consectetur adipiscing elit,sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </main>
+        <article id="menu">
+            <div class="info">
+                <h1>Our Menu</h1>
+                <h2> Bread Basket</h2>
+                <h3>Assortment of fresh baked fruit bread and muffins 5.50</h3>
+                <h2>Beligian Waffle</h2>
+                <h3>Vanilla flavored batter with malted flour 7.50</h3>
+                <h2>Scrambled eggs</h2>
+                <h3>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</h3>
+                <h2>Blueberry Pancakes</h2>
+                <h3>With syrup, butter and lots of berries 8.50</h3>
+            </div>
+            <div class="img">
+                <img src="img_tablesetting.jpg" alt="menu" >
+            </div>
+        </article>
+        <aside id="contact">
+            <h1>Contact</h1>
+            <h3>We offer full-service catering for any event,large or small.</h3>
+            <h2 Style="color:cadetblue">Catering Service,42nd Living St,43043 New York,NY </h2>
+            <h3>You can also contact us by phone 00553123-2323 or email catering@catering.com, or send us a message here:</h3>
+            <form>
+            <input type="text" placeholder="Name" required><br>
+            <input type="number" placeholder="How many people" required><br>
+            <input type="date" placeholder="Date" required><br>
+            <input type="textarea" placeholder="Message/Special requirements" required><br>
+            <button type="Submit">SEND MESSAGE</button>
+            </form>
+        </aside>
+        <img src="map.jpg" alt="map" >
+        <footer>
+            <h4>Clone Page For Practice</h4>
+        </footer>
+    </body>
+</html>
